@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@lingui/react": "^3.13.2",
+    "@lingui/cli": "^3.13.2",
+    "@lingui/macro": "^3.13.2",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -13,8 +15,8 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "prettier": "^2.6.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-redux": "^7.2.8",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
@@ -52,8 +54,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
-    "@lingui/cli": "^3.13.2",
-    "@lingui/macro": "^3.13.2",
+    "@types/lingui__core": "^3.0.0",
+		"@types/lingui__macro": "^3.0.0",
+		"@types/lingui__react": "^3.0.0",
     "@types/react-transition-group": "^4.4.4",
     "babel-plugin-macros": "^3.1.0"
   }
