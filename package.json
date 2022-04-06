@@ -51,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
     "@lingui/cli": "^3.13.2",
     "@lingui/macro": "^3.13.2",
     "@types/react-transition-group": "^4.4.4",

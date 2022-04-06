@@ -1,5 +1,6 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import { Provider } from 'react-redux'
@@ -23,14 +24,13 @@ i18n.loadLocaleData({
 
 i18n.activate('ru')
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <I18nProvider i18n={i18n}>
         <App />
       </I18nProvider>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
