@@ -1,10 +1,9 @@
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { tokens } from "../../tokens"
-
 import './style.scss'
 import Arrow from './../../Assets/Arrow';
 import Person from "../../Assets/Person";
-import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from 'react-redux'
 import { tokenChanged } from './tokenSlice';
@@ -64,12 +63,12 @@ const Tokens = () => {
                                         }
 
                                         return(
-                                            <>  
+                                            <React.Fragment key={i}>  
                                                 <span className={className}>
                                                     {+x > 0 && '+'}{x}%
                                                 </span>
                                                 {i !== 2 && <span>•</span>}
-                                            </>
+                                            </React.Fragment>
                                         )
                                     })}
                                 </div>
