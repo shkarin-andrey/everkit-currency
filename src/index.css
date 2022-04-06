@@ -68,3 +68,8 @@ code {
 .text-center {
   text-align: center;
 }
+
+.time__error {
+  text-align: center;
+  padding: 100px 0;
+}

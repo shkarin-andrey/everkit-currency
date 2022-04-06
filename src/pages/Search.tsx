@@ -4,7 +4,7 @@ import Container from "../components/Container"
 const Search = () => (
     <div className="search">
         <Container title={t`search`}>
-            <div>{t`noContent`}</div>
+            <div className="time__error">{t`noContent`}</div>
         </Container>
     </div>
 )

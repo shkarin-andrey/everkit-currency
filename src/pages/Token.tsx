@@ -7,7 +7,7 @@ const Token = () => {
     return (
         <div className="tokens">
             <Container title={actionToken}>
-                <div>{t`noContent`}</div>
+                <div className="time__error">{t`noContent`}</div>
             </Container>
         </div>
     )
