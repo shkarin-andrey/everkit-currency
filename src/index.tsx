@@ -1,17 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App';
+import { Provider } from 'react-redux'
+import store from './store'
 
-ReactDOM.render(
+import { i18n } from '@lingui/core'
+import { I18nProvider } from '@lingui/react'
+import { messages as ruMessages } from './locales/ru/messages'
+import { messages as enMessages } from './locales/en/messages'
+import { en, ru } from 'make-plural/plurals'
+
+i18n.load({
+  en: enMessages,
+  ru: ruMessages,
+})
+
+i18n.loadLocaleData({
+  en: { plurals: en },
+  ru: { plurals: ru },
+})
+
+i18n.activate('ru')
+
+const container = document.getElementById('root')!;
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+      <I18nProvider i18n={i18n}>
+        <App />
+      </I18nProvider>
+    </Provider>
+  </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

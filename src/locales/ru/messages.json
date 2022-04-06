@@ -1,0 +1,110 @@
+{
+  "404": {
+    "translation": "Уупс... Похоже что такой странице нет!",
+    "origin": [
+      [
+        "src/pages/Page404.tsx",
+        7
+      ]
+    ],
+    "extractedComments": []
+  },
+  "filters.All": {
+    "translation": "Все",
+    "origin": [
+      [
+        "src/tokens.ts",
+        332
+      ]
+    ],
+    "extractedComments": []
+  },
+  "filters.DEX": {
+    "translation": "DEX",
+    "origin": [
+      [
+        "src/tokens.ts",
+        348
+      ]
+    ],
+    "extractedComments": []
+  },
+  "filters.DeFi": {
+    "translation": "DeFi",
+    "origin": [
+      [
+        "src/tokens.ts",
+        336
+      ]
+    ],
+    "extractedComments": []
+  },
+  "filters.Games": {
+    "translation": "Games",
+    "origin": [
+      [
+        "src/tokens.ts",
+        344
+      ]
+    ],
+    "extractedComments": []
+  },
+  "filters.Wallets": {
+    "translation": "Wallets",
+    "origin": [
+      [
+        "src/tokens.ts",
+        340
+      ]
+    ],
+    "extractedComments": []
+  },
+  "noContent": {
+    "translation": "Тестовое задание не предусматривает реализацию контента здесь.",
+    "origin": [
+      [
+        "src/pages/Search.tsx",
+        7
+      ],
+      [
+        "src/pages/Token.tsx",
+        10
+      ]
+    ],
+    "extractedComments": []
+  },
+  "search": {
+    "translation": "Поиск",
+    "origin": [
+      [
+        "src/components/Sidebar/menu.tsx",
+        31
+      ],
+      [
+        "src/pages/Search.tsx",
+        6
+      ]
+    ],
+    "extractedComments": []
+  },
+  "tokens": {
+    "translation": "Токены",
+    "origin": [
+      [
+        "src/components/Sidebar/menu.tsx",
+        25
+      ]
+    ],
+    "extractedComments": []
+  },
+  "tokensEverscale": {
+    "translation": "Токены Everscale",
+    "origin": [
+      [
+        "src/pages/Main.tsx",
+        7
+      ]
+    ],
+    "extractedComments": []
+  }
+}

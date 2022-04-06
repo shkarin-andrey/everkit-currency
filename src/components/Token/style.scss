@@ -1,0 +1,115 @@
+.token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    transition: all .3s;
+    font-weight: 500;
+    font-size: 18px;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 2px #6347F5;
+    }
+
+    &-name {
+        display: flex;
+        flex-direction: column;
+        
+        .title {
+            font-size: 21px;
+            margin: 0;
+        }
+        .simbol {
+            font-size: 16px;
+        }
+    }
+
+    &-logo {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-person {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+    &-price {
+        &-bottom {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+    }
+
+    &-description {
+        width: 100%;
+        display: none;
+        &.active {
+            display: block;
+        }
+
+        p {
+            margin: 24px 0 0 0;
+        }
+    }
+
+    .grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 30px 40px 1fr 1fr 1fr 1fr 100px 32px;
+        gap: 12px;
+        width: 100%;
+    }
+}
+
+.token-list {
+    .item {
+        &-enter {
+            opacity: 0;
+        }
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit {
+            opacity: 1;
+        }
+        &-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+    }
+}
+
+@media (max-width: 1355px){
+    .token {
+        &-price {
+            text-align: center;
+            &-bottom {
+                justify-content: center;
+            }
+        }
+        .grid {
+            grid-template-columns: repeat(4, 1fr);
+          }
+    }
+}
+
+@media (max-width: 1140px){
+    
+}

@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"404":"Oops... Looks like there is no such page!","filters.All":"All","filters.DEX":"DEX","filters.DeFi":"DeFi","filters.Games":"Games","filters.Wallets":"Wallets","noContent":"The test task does not provide for the implementation of content here.","search":"Search","tokens":"Tokens","tokensEverscale":"Tokens Everscale"}};

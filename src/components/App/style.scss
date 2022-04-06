@@ -1,0 +1,13 @@
+.app {
+  background-color: #F7F7FB;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1520px){
+ .tokens {
+   padding-left: 50px;
+   padding-right: 50px;
+ }   
+}
+

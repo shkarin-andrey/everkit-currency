@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"404":"Уупс... Похоже что такой странице нет!","filters.All":"Все","filters.DEX":"DEX","filters.DeFi":"DeFi","filters.Games":"Games","filters.Wallets":"Wallets","noContent":"Тестовое задание не предусматривает реализацию контента здесь.","search":"Поиск","tokens":"Токены","tokensEverscale":"Токены Everscale"}};
